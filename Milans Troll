@@ -20,10 +20,12 @@ Screen.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Screen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = Screen
+Frame.Active = true
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Frame.Position = UDim2.new(0.34582901, -16, 0.235249534, -9)
 Frame.Size = UDim2.new(0, 469, 0, 274)
+Frame.Visible = false
 
 Close.Name = "Close"
 Close.Parent = Frame
@@ -45,6 +47,7 @@ UICorner_2.Parent = Frame
 
 title.Name = "title"
 title.Parent = Frame
+title.Active = true
 title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 title.BorderColor3 = Color3.fromRGB(0, 0, 0)
 title.BorderSizePixel = 0
@@ -119,7 +122,7 @@ TextLabel.TextSize = 14.000
 
 -- Scripts:
 
-local function MQNM_fake_script() -- Close.LocalScript 
+local function USXS_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local Frame = script.Parent.Parent
@@ -128,8 +131,8 @@ local function MQNM_fake_script() -- Close.LocalScript
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(MQNM_fake_script)()
-local function VMZIB_fake_script() -- flyv3.rainbow 
+coroutine.wrap(USXS_fake_script)()
+local function XPJTT_fake_script() -- flyv3.rainbow 
 	local script = Instance.new('LocalScript', flyv3)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -142,8 +145,8 @@ local function VMZIB_fake_script() -- flyv3.rainbow
 	end
 	
 end
-coroutine.wrap(VMZIB_fake_script)()
-local function QTAZK_fake_script() -- flyv3.TheFly 
+coroutine.wrap(XPJTT_fake_script)()
+local function VEMCGXT_fake_script() -- flyv3.TheFly 
 	local script = Instance.new('LocalScript', flyv3)
 
 	local main = Instance.new("ScreenGui")
@@ -621,8 +624,8 @@ local function QTAZK_fake_script() -- flyv3.TheFly
 		closebutton.Position =  UDim2.new(0, 0, -1, 27)
 	end)
 end
-coroutine.wrap(QTAZK_fake_script)()
-local function BJYMMV_fake_script() -- Frame.rightshift to open 
+coroutine.wrap(VEMCGXT_fake_script)()
+local function MKJU_fake_script() -- Frame.rightshift to open 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Gui = script.Parent
@@ -640,8 +643,8 @@ local function BJYMMV_fake_script() -- Frame.rightshift to open
 	game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
 	
 end
-coroutine.wrap(BJYMMV_fake_script)()
-local function WBIQQL_fake_script() -- esp.rainbow 
+coroutine.wrap(MKJU_fake_script)()
+local function VPLBR_fake_script() -- esp.rainbow 
 	local script = Instance.new('LocalScript', esp)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -654,8 +657,8 @@ local function WBIQQL_fake_script() -- esp.rainbow
 	end
 	
 end
-coroutine.wrap(WBIQQL_fake_script)()
-local function ALQN_fake_script() -- esp.LocalScript 
+coroutine.wrap(VPLBR_fake_script)()
+local function URDVY_fake_script() -- esp.LocalScript 
 	local script = Instance.new('LocalScript', esp)
 
 	_G.FriendColor = Color3.fromRGB(0, 0, 255)
@@ -809,33 +812,9 @@ local function ALQN_fake_script() -- esp.LocalScript
 		end
 	end
 end
-coroutine.wrap(ALQN_fake_script)()
-local function CTIWX_fake_script() -- Open.LocalScript 
-	local script = Instance.new('LocalScript', Open)
-
-	local Frame = script.Parent.Parent.Frame
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		Frame.Visible = true
-	end)
-end
-coroutine.wrap(CTIWX_fake_script)()
-local function CEXQ_fake_script() -- Open.LocalScript 
-	local script = Instance.new('LocalScript', Open)
-
-	local textLabel = script.Parent -- Get the TextLabel
-	local hue = 0 -- Start color at 0 (Red in HSV)
-	
-	while true do
-		hue = (hue + 1) % 360 -- Cycle through colors smoothly
-		textLabel.TextColor3 = Color3.fromHSV(hue / 360, 1, 1) -- Convert to RGB
-		wait(0.05) -- Adjust speed (Lower = Faster)
-	end
-	
-end
-coroutine.wrap(CEXQ_fake_script)()
-local function WURYSI_fake_script() -- Screen.LocalScript 
-	local script = Instance.new('LocalScript', Screen)
+coroutine.wrap(URDVY_fake_script)()
+local function UCACML_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
 
 	local player = game.Players.LocalPlayer
 	local mouse = player:GetMouse()
@@ -850,7 +829,40 @@ local function WURYSI_fake_script() -- Screen.LocalScript
 	
 	mouse.Move:Connect(function()
 		if script.Parent.Holding.Value == true then
-			script.Parent.Frame.Position = UDim2.new(0,mouse.X,0,mouse.Y) -- Change "Frame" to your frame name
+			script.Parent.Frame.Position = UDim2.new(0,mouse.X,0,mouse.Y)
 		end
 	end)
+end
+coroutine.wrap(UCACML_fake_script)()
+local function ABVX_fake_script() -- Frame.Drag 
+	local script = Instance.new('LocalScript', Frame)
+
+	local parent: Frame = script.Parent
+	parent.Draggable = true
+	parent.Selectable = true
+	parent.Active = true
+end
+coroutine.wrap(ABVX_fake_script)()
+local function JARQGPB_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local Frame = script.Parent.Parent.Frame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = true
+	end)
+end
+coroutine.wrap(JARQGPB_fake_script)()
+local function DRGFVSB_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local textLabel = script.Parent -- Get the TextLabel
+	local hue = 0 -- Start color at 0 (Red in HSV)
+	
+	while true do
+		hue = (hue + 1) % 360 -- Cycle through colors smoothly
+		textLabel.TextColor3 = Color3.fromHSV(hue / 360, 1, 1) -- Convert to RGB
+		wait(0.05) -- Adjust speed (Lower = Faster)
+	end
+	
 end
