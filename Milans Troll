@@ -10,7 +10,7 @@ local UICorner_3 = Instance.new("UICorner")
 local Open = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
-
+local onof
 --Properties:
 
 Screen.Name = "Screen"
@@ -142,7 +142,7 @@ local function HBNCQCH_fake_script() -- TextButton.LocalScript
 	local Frame = Instance.new("Frame")
 	local up = Instance.new("TextButton")
 	local down = Instance.new("TextButton")
-	 onof = Instance.new("TextButton")
+	onof = Instance.new("TextButton")
 	local TextLabel = Instance.new("TextLabel")
 	local plus = Instance.new("TextButton")
 	local speed = Instance.new("TextLabel")
@@ -593,20 +593,7 @@ local function HBNCQCH_fake_script() -- TextButton.LocalScript
 		onof.Visible = false
 		plus.Visible = false
 		speed.Visible = false
-		mine.Visible = false
-		mini.Visible = false
-		mini2.Visible = true
-		main.Frame.BackgroundTransparency = 1
-		closebutton.Position =  UDim2.new(0, 0, -1, 57)
-	end)
-	
-	mini2.MouseButton1Click:Connect(function()
-		up.Visible = true
-		down.Visible = true
-		onof.Visible = true
-		plus.Visible = true
-		speed.Visible = true
-		mine.Visible = true
+mine.Visible = true
 		mini.Visible = true
 		mini2.Visible = false
 		main.Frame.BackgroundTransparency = 0 
@@ -670,3 +657,9 @@ local function RKNUFNJ_fake_script() -- Open.LocalScript
 	end
 	
 end
+
+
+
+TextButton.MouseButton1Click:Connect(function()
+      onof.Visible = not onof.Visible
+end)
