@@ -122,7 +122,7 @@ TextLabel.TextSize = 14.000
 
 -- Scripts:
 
-local function USXS_fake_script() -- Close.LocalScript 
+local function QROHDW_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local Frame = script.Parent.Parent
@@ -131,8 +131,8 @@ local function USXS_fake_script() -- Close.LocalScript
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(USXS_fake_script)()
-local function XPJTT_fake_script() -- flyv3.rainbow 
+coroutine.wrap(QROHDW_fake_script)()
+local function ASAHU_fake_script() -- flyv3.rainbow 
 	local script = Instance.new('LocalScript', flyv3)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -145,8 +145,8 @@ local function XPJTT_fake_script() -- flyv3.rainbow
 	end
 	
 end
-coroutine.wrap(XPJTT_fake_script)()
-local function VEMCGXT_fake_script() -- flyv3.TheFly 
+coroutine.wrap(ASAHU_fake_script)()
+local function GBQTQG_fake_script() -- flyv3.TheFly 
 	local script = Instance.new('LocalScript', flyv3)
 
 	local main = Instance.new("ScreenGui")
@@ -624,8 +624,8 @@ local function VEMCGXT_fake_script() -- flyv3.TheFly
 		closebutton.Position =  UDim2.new(0, 0, -1, 27)
 	end)
 end
-coroutine.wrap(VEMCGXT_fake_script)()
-local function MKJU_fake_script() -- Frame.rightshift to open 
+coroutine.wrap(GBQTQG_fake_script)()
+local function GVMYCBA_fake_script() -- Frame.rightshift to open 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Gui = script.Parent
@@ -643,8 +643,8 @@ local function MKJU_fake_script() -- Frame.rightshift to open
 	game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
 	
 end
-coroutine.wrap(MKJU_fake_script)()
-local function VPLBR_fake_script() -- esp.rainbow 
+coroutine.wrap(GVMYCBA_fake_script)()
+local function SXJLT_fake_script() -- esp.rainbow 
 	local script = Instance.new('LocalScript', esp)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -657,8 +657,8 @@ local function VPLBR_fake_script() -- esp.rainbow
 	end
 	
 end
-coroutine.wrap(VPLBR_fake_script)()
-local function URDVY_fake_script() -- esp.LocalScript 
+coroutine.wrap(SXJLT_fake_script)()
+local function MFRS_fake_script() -- esp.LocalScript 
 	local script = Instance.new('LocalScript', esp)
 
 	_G.FriendColor = Color3.fromRGB(0, 0, 255)
@@ -812,8 +812,8 @@ local function URDVY_fake_script() -- esp.LocalScript
 		end
 	end
 end
-coroutine.wrap(URDVY_fake_script)()
-local function UCACML_fake_script() -- Frame.LocalScript 
+coroutine.wrap(MFRS_fake_script)()
+local function HMERY_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local player = game.Players.LocalPlayer
@@ -833,8 +833,8 @@ local function UCACML_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UCACML_fake_script)()
-local function ABVX_fake_script() -- Frame.Drag 
+coroutine.wrap(HMERY_fake_script)()
+local function LGASPYC_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local parent: Frame = script.Parent
@@ -842,8 +842,8 @@ local function ABVX_fake_script() -- Frame.Drag
 	parent.Selectable = true
 	parent.Active = true
 end
-coroutine.wrap(ABVX_fake_script)()
-local function JARQGPB_fake_script() -- Open.LocalScript 
+coroutine.wrap(LGASPYC_fake_script)()
+local function CEJI_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local Frame = script.Parent.Parent.Frame
@@ -852,8 +852,8 @@ local function JARQGPB_fake_script() -- Open.LocalScript
 		Frame.Visible = true
 	end)
 end
-coroutine.wrap(JARQGPB_fake_script)()
-local function DRGFVSB_fake_script() -- Open.LocalScript 
+coroutine.wrap(CEJI_fake_script)()
+local function ISXKZD_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local textLabel = script.Parent -- Get the TextLabel
