@@ -9,10 +9,15 @@ local flyv3 = Instance.new("TextButton")
 local esp = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local Bang = Instance.new("TextButton")
+local TeleportToPlrGui = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
+local tp = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 
 --Properties:
 
@@ -26,6 +31,7 @@ Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Frame.Position = UDim2.new(0.34582901, -16, 0.235249534, -9)
 Frame.Size = UDim2.new(0, 469, 0, 274)
+Frame.Visible = false
 
 Close.Name = "Close"
 Close.Parent = Frame
@@ -93,17 +99,17 @@ ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.782516003, 0, 0.0401459858, 0)
 ScrollingFrame.Size = UDim2.new(0, 100, 0, 251)
 
-Bang.Name = "Bang"
-Bang.Parent = Frame
-Bang.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
-Bang.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Bang.BorderSizePixel = 0
-Bang.Position = UDim2.new(0, 0, 0.364963502, 0)
-Bang.Size = UDim2.new(0, 200, 0, 50)
-Bang.Font = Enum.Font.SourceSans
-Bang.Text = "Bang Script"
-Bang.TextColor3 = Color3.fromRGB(0, 0, 0)
-Bang.TextSize = 14.000
+TeleportToPlrGui.Name = "Teleport To Plr Gui"
+TeleportToPlrGui.Parent = Frame
+TeleportToPlrGui.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+TeleportToPlrGui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TeleportToPlrGui.BorderSizePixel = 0
+TeleportToPlrGui.Position = UDim2.new(0, 0, 0.364963502, 0)
+TeleportToPlrGui.Size = UDim2.new(0, 200, 0, 50)
+TeleportToPlrGui.Font = Enum.Font.SourceSans
+TeleportToPlrGui.Text = "Tp To Plr Gui"
+TeleportToPlrGui.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportToPlrGui.TextSize = 14.000
 
 Open.Name = "Open"
 Open.Parent = Screen
@@ -132,9 +138,50 @@ TextLabel.Text = "Rightshift to open or open button to open the menu"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 14.000
 
+tp.Name = "tp"
+tp.Parent = Screen
+tp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tp.BackgroundTransparency = 0.500
+tp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tp.BorderSizePixel = 0
+tp.Position = UDim2.new(0.458850414, 0, 0.354399443, 0)
+tp.Size = UDim2.new(0, 166, 0, 99)
+tp.Visible = false
+
+TextBox.Parent = tp
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 0.900
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Size = UDim2.new(0, 166, 0, 50)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+TextButton.Parent = tp
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 0.800
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 0.50505048, 0)
+TextButton.Size = UDim2.new(0, 166, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Teleport"
+TextButton.TextColor3 = Color3.fromRGB(3, 7, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 12)
+UICorner_6.Parent = TextButton
+
+UICorner_7.CornerRadius = UDim.new(0, 12)
+UICorner_7.Parent = tp
+
 -- Scripts:
 
-local function RKQQC_fake_script() -- Close.LocalScript 
+local function CWVYA_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local Frame = script.Parent.Parent
@@ -143,8 +190,8 @@ local function RKQQC_fake_script() -- Close.LocalScript
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(RKQQC_fake_script)()
-local function JPXSPFY_fake_script() -- flyv3.rainbow 
+coroutine.wrap(CWVYA_fake_script)()
+local function WYAFE_fake_script() -- flyv3.rainbow 
 	local script = Instance.new('LocalScript', flyv3)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -157,8 +204,8 @@ local function JPXSPFY_fake_script() -- flyv3.rainbow
 	end
 	
 end
-coroutine.wrap(JPXSPFY_fake_script)()
-local function VJPV_fake_script() -- flyv3.the fly one 
+coroutine.wrap(WYAFE_fake_script)()
+local function GKYMJW_fake_script() -- flyv3.the fly one 
 	local script = Instance.new('LocalScript', flyv3)
 
 	local main = Instance.new("ScreenGui")
@@ -173,6 +220,7 @@ local function VJPV_fake_script() -- flyv3.the fly one
 	local closebutton = Instance.new("TextButton")
 	local mini = Instance.new("TextButton")
 	local mini2 = Instance.new("TextButton")
+	Frame.Visible = false
 	
 	main.Name = "main"
 	main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -635,9 +683,12 @@ local function VJPV_fake_script() -- flyv3.the fly one
 		main.Frame.BackgroundTransparency = 0 
 		closebutton.Position =  UDim2.new(0, 0, -1, 27)
 	end)
+	script.Parent.MouseButton1Up:Connect(function()
+			Frame.Visible = not Frame.Visible
+	end)
 end
-coroutine.wrap(VJPV_fake_script)()
-local function KMRYKD_fake_script() -- Frame.rightshift to open 
+coroutine.wrap(GKYMJW_fake_script)()
+local function VLFT_fake_script() -- Frame.rightshift to open 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Gui = script.Parent
@@ -655,8 +706,8 @@ local function KMRYKD_fake_script() -- Frame.rightshift to open
 	game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
 	
 end
-coroutine.wrap(KMRYKD_fake_script)()
-local function ZNLGMD_fake_script() -- esp.rainbow 
+coroutine.wrap(VLFT_fake_script)()
+local function IPNXT_fake_script() -- esp.rainbow 
 	local script = Instance.new('LocalScript', esp)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -669,163 +720,68 @@ local function ZNLGMD_fake_script() -- esp.rainbow
 	end
 	
 end
-coroutine.wrap(ZNLGMD_fake_script)()
-local function FEUB_fake_script() -- esp.The esp 
+coroutine.wrap(IPNXT_fake_script)()
+local function MNTXW_fake_script() -- esp.The esp 
 	local script = Instance.new('LocalScript', esp)
 
-	_G.FriendColor = Color3.fromRGB(0, 0, 255)
-	_G.EnemyColor = Color3.fromRGB(255, 0, 0)
-	_G.UseTeamColor = true
-	
-	--------------------------------------------------------------------
-	local Holder = Instance.new("Folder", game.CoreGui)
-	Holder.Name = "ESP"
-	
-	local Box = Instance.new("BoxHandleAdornment")
-	Box.Name = "nilBox"
-	Box.Size = Vector3.new(1, 2, 1)
-	Box.Color3 = Color3.new(100 / 255, 100 / 255, 100 / 255)
-	Box.Transparency = 0.7
-	Box.ZIndex = 0
-	Box.AlwaysOnTop = false
-	Box.Visible = false
-	
-	local NameTag = Instance.new("BillboardGui")
-	NameTag.Name = "nilNameTag"
-	NameTag.Enabled = false
-	NameTag.Size = UDim2.new(0, 200, 0, 50)
-	NameTag.AlwaysOnTop = true
-	NameTag.StudsOffset = Vector3.new(0, 1.8, 0)
-	local Tag = Instance.new("TextLabel", NameTag)
-	Tag.Name = "Tag"
-	Tag.BackgroundTransparency = 1
-	Tag.Position = UDim2.new(0, -50, 0, 0)
-	Tag.Size = UDim2.new(0, 300, 0, 20)
-	Tag.TextSize = 15
-	Tag.TextColor3 = Color3.new(100 / 255, 100 / 255, 100 / 255)
-	Tag.TextStrokeColor3 = Color3.new(0 / 255, 0 / 255, 0 / 255)
-	Tag.TextStrokeTransparency = 0.4
-	Tag.Text = "nil"
-	Tag.Font = Enum.Font.SourceSansBold
-	Tag.TextScaled = false
-	
-	local LoadCharacter = function(v)
-		repeat wait() until v.Character ~= nil
-		v.Character:WaitForChild("Humanoid")
-		local vHolder = Holder:FindFirstChild(v.Name)
-		vHolder:ClearAllChildren()
-		local b = Box:Clone()
-		b.Name = v.Name .. "Box"
-		b.Adornee = v.Character
-		b.Parent = vHolder
-		local t = NameTag:Clone()
-		t.Name = v.Name .. "NameTag"
-		t.Enabled = true
-		t.Parent = vHolder
-		t.Adornee = v.Character:WaitForChild("Head", 5)
-		if not t.Adornee then
-			return UnloadCharacter(v)
-		end
-		t.Tag.Text = v.Name
-		b.Color3 = Color3.new(v.TeamColor.r, v.TeamColor.g, v.TeamColor.b)
-		t.Tag.TextColor3 = Color3.new(v.TeamColor.r, v.TeamColor.g, v.TeamColor.b)
-		local Update
-		local UpdateNameTag = function()
-			if not pcall(function()
-					v.Character.Humanoid.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
-					local maxh = math.floor(v.Character.Humanoid.MaxHealth)
-					local h = math.floor(v.Character.Humanoid.Health)
-				end) then
-				Update:Disconnect()
-			end
-		end
-		UpdateNameTag()
-		Update = v.Character.Humanoid.Changed:Connect(UpdateNameTag)
-	end
-	
-	local UnloadCharacter = function(v)
-		local vHolder = Holder:FindFirstChild(v.Name)
-		if vHolder and (vHolder:FindFirstChild(v.Name .. "Box") ~= nil or vHolder:FindFirstChild(v.Name .. "NameTag") ~= nil) then
-			vHolder:ClearAllChildren()
-		end
-	end
-	
-	local LoadPlayer = function(v)
-		local vHolder = Instance.new("Folder", Holder)
-		vHolder.Name = v.Name
-		v.CharacterAdded:Connect(function()
-			pcall(LoadCharacter, v)
-		end)
-		v.CharacterRemoving:Connect(function()
-			pcall(UnloadCharacter, v)
-		end)
-		v.Changed:Connect(function(prop)
-			if prop == "TeamColor" then
-				UnloadCharacter(v)
-				wait()
-				LoadCharacter(v)
-			end
-		end)
-		LoadCharacter(v)
-	end
-	
-	local UnloadPlayer = function(v)
-		UnloadCharacter(v)
-		local vHolder = Holder:FindFirstChild(v.Name)
-		if vHolder then
-			vHolder:Destroy()
-		end
-	end
-	
-	for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-		spawn(function() pcall(LoadPlayer, v) end)
-	end
-	
-	game:GetService("Players").PlayerAdded:Connect(function(v)
-		pcall(LoadPlayer, v)
-	end)
-	
-	game:GetService("Players").PlayerRemoving:Connect(function(v)
-		pcall(UnloadPlayer, v)
-	end)
-	
-	game:GetService("Players").LocalPlayer.NameDisplayDistance = 0
-	
-	if _G.Reantheajfdfjdgs then
-		return
-	end
-	
-	_G.Reantheajfdfjdgs = ":suifayhgvsdghfsfkajewfrhk321rk213kjrgkhj432rj34f67df"
-	
 	local players = game:GetService("Players")
-	local plr = players.LocalPlayer
+	local localPlayer = players.LocalPlayer
+	local runService = game:GetService("RunService")
 	
-	function esp(target, color)
-		if target.Character then
-			if not target.Character:FindFirstChild("GetReal") then
-				local highlight = Instance.new("Highlight")
-				highlight.RobloxLocked = true
-				highlight.Name = "GetReal"
-				highlight.Adornee = target.Character
-				highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-				highlight.FillColor = color
-				highlight.Parent = target.Character
-			else
-				target.Character.GetReal.FillColor = color
+	script.Parent.MouseButton1Up:Connect(function()
+		local function createESP(player)
+			-- Create highlight
+			local highlight = Instance.new("Highlight")
+			highlight.Name = player.Name .. "_ESP"
+			highlight.Adornee = player.Character
+			highlight.FillTransparency = 1
+			highlight.OutlineColor = Color3.new(1, 1, 1) -- White color
+			highlight.OutlineTransparency = 0
+			highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+			highlight.Parent = player.Character
+	
+			-- Create name tag
+			local billboardGui = Instance.new("BillboardGui")
+			billboardGui.Name = player.Name .. "_NameTag"
+			billboardGui.Adornee = player.Character:FindFirstChild("HumanoidRootPart")
+			billboardGui.Size = UDim2.new(0, 100, 0, 50)
+			billboardGui.StudsOffset = Vector3.new(0, 2, 0)
+			billboardGui.AlwaysOnTop = true
+			billboardGui.Parent = player.Character
+	
+			local textLabel = Instance.new("TextLabel")
+			textLabel.Size = UDim2.new(1, 0, 1, 0)
+			textLabel.BackgroundTransparency = 1
+			textLabel.Text = player.Name
+			textLabel.TextColor3 = Color3.new(1, 1, 1) -- White color
+			textLabel.TextStrokeTransparency = 0
+			textLabel.Parent = billboardGui
+		end
+	
+		local function addESP()
+			for _, player in pairs(players:GetPlayers()) do
+				if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+					if not player.Character:FindFirstChild(player.Name .. "_ESP") then
+						createESP(player)
+					end
+				end
 			end
 		end
-	end
 	
-	while task.wait() do
-		for i, v in pairs(players:GetPlayers()) do
-			if v ~= plr then
-				esp(v, _G.UseTeamColor and v.TeamColor.Color or ((plr.TeamColor == v.TeamColor) and _G.FriendColor or _G.EnemyColor))
+		runService.RenderStepped:Connect(function()
+			addESP()
+		end)
+	
+		players.PlayerRemoving:Connect(function(player)
+			if player.Character and player.Character:FindFirstChild(player.Name .. "_ESP") then
+				player.Character[player.Name .. "_ESP"]:Destroy()
+				player.Character[player.Name .. "_NameTag"]:Destroy()
 			end
-		end
-	end
+		end)
+	end)
 end
-coroutine.wrap(FEUB_fake_script)()
-local function HBXWPU_fake_script() -- Frame.LocalScript 
+coroutine.wrap(MNTXW_fake_script)()
+local function HAAF_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local player = game.Players.LocalPlayer
@@ -845,8 +801,8 @@ local function HBXWPU_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HBXWPU_fake_script)()
-local function ECZTG_fake_script() -- Frame.Drag 
+coroutine.wrap(HAAF_fake_script)()
+local function KJSA_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local parent: Frame = script.Parent
@@ -854,152 +810,9 @@ local function ECZTG_fake_script() -- Frame.Drag
 	parent.Selectable = true
 	parent.Active = true
 end
-coroutine.wrap(ECZTG_fake_script)()
-local function KPJTQRD_fake_script() -- Bang.LocalScript 
-	local script = Instance.new('LocalScript', Bang)
-
-	local SimpleSexGUI = Instance.new("ScreenGui")
-	
-	local FGUI = Instance.new("Frame")
-	
-	local btnNaked = Instance.new("TextButton")
-	
-	local btnSex = Instance.new("TextButton")
-	
-	local tbxVictim = Instance.new("TextBox")
-	
-	local lblFUCKEMALL = Instance.new("TextLabel")
-	
-	local ImageLabel = Instance.new("ImageLabel")
-	
-	local lbltitle = Instance.new("TextLabel")
-	
-	local TextLabel = Instance.new("TextLabel")
-	
-	
-	
-	
-	
-	
-	
-	
-	--Properties
-	
-	SimpleSexGUI.Name = "SimpleSexGUI"
-	SimpleSexGUI.Parent = game.CoreGui
-	
-	
-	FGUI.Name = "FGUI"
-	FGUI.Parent = SimpleSexGUI
-	FGUI.BackgroundColor3 = Color3.new(255,255,255)
-	FGUI.BorderSizePixel = 1
-	FGUI.Position = UDim2.new(0,0, 0.667, 0)
-	FGUI.Size = UDim2.new(0,317, 0,271)
-	FGUI.Draggable = true
-	
-	
-	
-	lbltitle.Name = "Title"
-	lbltitle.Parent = FGUI
-	lbltitle.BackgroundColor3 = Color3.new(255,255,255)
-	lbltitle.BorderSizePixel = 1
-	lbltitle.Position = UDim2.new (0, 0,-0.122, 0)
-	lbltitle.Size = UDim2.new (0, 317,0, 33)
-	lbltitle.Visible = true
-	lbltitle.Active = true
-	lbltitle.Draggable = false
-	lbltitle.Selectable = true
-	lbltitle.Font = Enum.Font.SourceSansBold
-	lbltitle.Text = "A Simple Fuck(ing) GUI!!"
-	lbltitle.TextColor3 = Color3.new(0, 0, 0)
-	lbltitle.TextSize = 20
-	
-	
-	
-	
-	
-	btnSex.Name = "Sex"
-	btnSex.Parent = FGUI
-	btnSex.BackgroundColor3 = Color3.new(255,255,255)
-	btnSex.BorderSizePixel = 1
-	btnSex.Position = UDim2.new (0.044, 0,0.229, 0)
-	btnSex.Size = UDim2.new (0, 99,0, 31)
-	btnSex.Visible = true
-	btnSex.Active = true
-	btnSex.Draggable = false
-	btnSex.Selectable = true
-	btnSex.Font = Enum.Font.SourceSansBold
-	btnSex.Text = "Let's FUCK!!"
-	btnSex.TextColor3 = Color3.new(0, 0, 0)
-	btnSex.TextSize = 20
-	
-	
-	
-	
-	tbxVictim.Name = "VictimTEXT"
-	tbxVictim.Parent = FGUI
-	tbxVictim.BackgroundColor3 = Color3.new(255,255,255)
-	tbxVictim.BorderSizePixel = 1
-	tbxVictim.Position = UDim2.new (0.533, 0,0.229, 0)
-	tbxVictim.Size = UDim2.new (0, 133,0, 27)
-	tbxVictim.Visible = true
-	tbxVictim.Active = true
-	tbxVictim.Draggable = false
-	tbxVictim.Selectable = true
-	tbxVictim.Font = Enum.Font.SourceSansBold
-	tbxVictim.Text = "[NAME]"
-	tbxVictim.TextColor3 = Color3.new(0, 0, 0)
-	tbxVictim.TextSize = 20
-	
-	lblFUCKEMALL.Name = "FUCKEMALL"
-	lblFUCKEMALL.Parent = FGUI
-	lblFUCKEMALL.BackgroundColor3 = Color3.new(255,255,255)
-	lblFUCKEMALL.BorderSizePixel = 1
-	lblFUCKEMALL.Position = UDim2.new (0.025, 0,0.856, 0)
-	lblFUCKEMALL.Size = UDim2.new (0, 301,0, 27)
-	lblFUCKEMALL.Visible = true
-	lblFUCKEMALL.Font = Enum.Font.SourceSansBold
-	lblFUCKEMALL.Text = "FUCK AND FUCK"
-	lblFUCKEMALL.TextColor3 = Color3.new(0, 0, 0)
-	lblFUCKEMALL.TextSize = 20
-	
-	ImageLabel.Name = "ImageLabel"
-	ImageLabel.Parent = FGUI
-	ImageLabel.Image = "http://www.roblox.com/asset/?id=42837..."
-	ImageLabel.BorderSizePixel = 1
-	ImageLabel.Position = UDim2.new (0.274, 0,0.358, 0)
-	ImageLabel.Size = UDim2.new (0, 106,0, 121)
-	
-	
-	
-	
-	--Scripts
-	
-	
-	btnSex.MouseButton1Click:Connect(function()
-	
-		local player = tbxVictim.Text
-		local stupid = Instance.new('Animation')
-		stupid.AnimationId = 'rbxassetid://148840371'
-		hummy = game:GetService("Players").LocalPlayer.Character.Humanoid
-		pcall(function()
-			hummy.Parent.Pants:Destroy()
-		end)
-		pcall(function()
-			hummy.Parent.Shirt:Destroy()
-		end)
-		local notfunny = hummy:LoadAnimation(stupid)
-		notfunny:Play()
-		notfunny:AdjustSpeed(10)
-		while hummy.Parent.Parent ~= nil do
-			wait()
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[tbxVictim.Text].Character.HumanoidRootPart.CFrame
-		end
-	end)
-end
-coroutine.wrap(KPJTQRD_fake_script)()
-local function QPKYSZP_fake_script() -- Bang.LocalScript 
-	local script = Instance.new('LocalScript', Bang)
+coroutine.wrap(KJSA_fake_script)()
+local function JONGEJY_fake_script() -- TeleportToPlrGui.Rainbow 
+	local script = Instance.new('LocalScript', TeleportToPlrGui)
 
 	local textLabel = script.Parent -- Get the TextLabel
 	local hue = 0 -- Start color at 0 (Red in HSV)
@@ -1011,8 +824,17 @@ local function QPKYSZP_fake_script() -- Bang.LocalScript
 	end
 	
 end
-coroutine.wrap(QPKYSZP_fake_script)()
-local function EGUUSQ_fake_script() -- Open.LocalScript 
+coroutine.wrap(JONGEJY_fake_script)()
+local function DRBYX_fake_script() -- TeleportToPlrGui.LocalScript 
+	local script = Instance.new('LocalScript', TeleportToPlrGui)
+
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Parent.tp.Visible = not script.Parent.Parent.Parent.tp.Visible
+	end)
+end
+coroutine.wrap(DRBYX_fake_script)()
+local function BZESSJJ_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local Frame = script.Parent.Parent.Frame
@@ -1021,8 +843,8 @@ local function EGUUSQ_fake_script() -- Open.LocalScript
 		Frame.Visible = true
 	end)
 end
-coroutine.wrap(EGUUSQ_fake_script)()
-local function DDIV_fake_script() -- Open.LocalScript 
+coroutine.wrap(BZESSJJ_fake_script)()
+local function JVTBHDO_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -1034,4 +856,26 @@ local function DDIV_fake_script() -- Open.LocalScript
 		wait(0.05) -- Adjust speed (Lower = Faster)
 	end
 	
+end
+coroutine.wrap(JVTBHDO_fake_script)()
+local function DURSJX_fake_script() -- TextButton.Something 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local players = game:GetService("Players")
+	local localplr = players.LocalPlayer
+	
+	local function teleportToPlayer(partialName)
+		for _, player in pairs(players:GetPlayers()) do
+			if player ~= localplr and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				if string.find(string.lower(player.Name), string.lower(partialName)) then
+					localplr.Character.HumanoidRootPart.Position = player.Character.HumanoidRootPart.Position
+					return
+				end
+			end
+		end
+	end
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		teleportToPlayer(script.Parent.Parent.TextBox.Text)
+	end)
 end
