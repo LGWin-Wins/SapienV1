@@ -9,6 +9,7 @@ local flyv3 = Instance.new("TextButton")
 local esp = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local ScrollingFrame = Instance.new("ScrollingFrame")
+local Bang = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
@@ -25,7 +26,6 @@ Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Frame.Position = UDim2.new(0.34582901, -16, 0.235249534, -9)
 Frame.Size = UDim2.new(0, 469, 0, 274)
-Frame.Visible = false
 
 Close.Name = "Close"
 Close.Parent = Frame
@@ -93,6 +93,18 @@ ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.782516003, 0, 0.0401459858, 0)
 ScrollingFrame.Size = UDim2.new(0, 100, 0, 251)
 
+Bang.Name = "Bang"
+Bang.Parent = Frame
+Bang.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+Bang.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bang.BorderSizePixel = 0
+Bang.Position = UDim2.new(0, 0, 0.364963502, 0)
+Bang.Size = UDim2.new(0, 200, 0, 50)
+Bang.Font = Enum.Font.SourceSans
+Bang.Text = "Bang Script"
+Bang.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bang.TextSize = 14.000
+
 Open.Name = "Open"
 Open.Parent = Screen
 Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -122,7 +134,7 @@ TextLabel.TextSize = 14.000
 
 -- Scripts:
 
-local function QROHDW_fake_script() -- Close.LocalScript 
+local function RKQQC_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local Frame = script.Parent.Parent
@@ -131,8 +143,8 @@ local function QROHDW_fake_script() -- Close.LocalScript
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(QROHDW_fake_script)()
-local function ASAHU_fake_script() -- flyv3.rainbow 
+coroutine.wrap(RKQQC_fake_script)()
+local function JPXSPFY_fake_script() -- flyv3.rainbow 
 	local script = Instance.new('LocalScript', flyv3)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -145,8 +157,8 @@ local function ASAHU_fake_script() -- flyv3.rainbow
 	end
 	
 end
-coroutine.wrap(ASAHU_fake_script)()
-local function GBQTQG_fake_script() -- flyv3.TheFly 
+coroutine.wrap(JPXSPFY_fake_script)()
+local function VJPV_fake_script() -- flyv3.the fly one 
 	local script = Instance.new('LocalScript', flyv3)
 
 	local main = Instance.new("ScreenGui")
@@ -624,8 +636,8 @@ local function GBQTQG_fake_script() -- flyv3.TheFly
 		closebutton.Position =  UDim2.new(0, 0, -1, 27)
 	end)
 end
-coroutine.wrap(GBQTQG_fake_script)()
-local function GVMYCBA_fake_script() -- Frame.rightshift to open 
+coroutine.wrap(VJPV_fake_script)()
+local function KMRYKD_fake_script() -- Frame.rightshift to open 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Gui = script.Parent
@@ -643,8 +655,8 @@ local function GVMYCBA_fake_script() -- Frame.rightshift to open
 	game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
 	
 end
-coroutine.wrap(GVMYCBA_fake_script)()
-local function SXJLT_fake_script() -- esp.rainbow 
+coroutine.wrap(KMRYKD_fake_script)()
+local function ZNLGMD_fake_script() -- esp.rainbow 
 	local script = Instance.new('LocalScript', esp)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -657,8 +669,8 @@ local function SXJLT_fake_script() -- esp.rainbow
 	end
 	
 end
-coroutine.wrap(SXJLT_fake_script)()
-local function MFRS_fake_script() -- esp.LocalScript 
+coroutine.wrap(ZNLGMD_fake_script)()
+local function FEUB_fake_script() -- esp.The esp 
 	local script = Instance.new('LocalScript', esp)
 
 	_G.FriendColor = Color3.fromRGB(0, 0, 255)
@@ -812,8 +824,8 @@ local function MFRS_fake_script() -- esp.LocalScript
 		end
 	end
 end
-coroutine.wrap(MFRS_fake_script)()
-local function HMERY_fake_script() -- Frame.LocalScript 
+coroutine.wrap(FEUB_fake_script)()
+local function HBXWPU_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local player = game.Players.LocalPlayer
@@ -833,8 +845,8 @@ local function HMERY_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HMERY_fake_script)()
-local function LGASPYC_fake_script() -- Frame.Drag 
+coroutine.wrap(HBXWPU_fake_script)()
+local function ECZTG_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local parent: Frame = script.Parent
@@ -842,8 +854,165 @@ local function LGASPYC_fake_script() -- Frame.Drag
 	parent.Selectable = true
 	parent.Active = true
 end
-coroutine.wrap(LGASPYC_fake_script)()
-local function CEJI_fake_script() -- Open.LocalScript 
+coroutine.wrap(ECZTG_fake_script)()
+local function KPJTQRD_fake_script() -- Bang.LocalScript 
+	local script = Instance.new('LocalScript', Bang)
+
+	local SimpleSexGUI = Instance.new("ScreenGui")
+	
+	local FGUI = Instance.new("Frame")
+	
+	local btnNaked = Instance.new("TextButton")
+	
+	local btnSex = Instance.new("TextButton")
+	
+	local tbxVictim = Instance.new("TextBox")
+	
+	local lblFUCKEMALL = Instance.new("TextLabel")
+	
+	local ImageLabel = Instance.new("ImageLabel")
+	
+	local lbltitle = Instance.new("TextLabel")
+	
+	local TextLabel = Instance.new("TextLabel")
+	
+	
+	
+	
+	
+	
+	
+	
+	--Properties
+	
+	SimpleSexGUI.Name = "SimpleSexGUI"
+	SimpleSexGUI.Parent = game.CoreGui
+	
+	
+	FGUI.Name = "FGUI"
+	FGUI.Parent = SimpleSexGUI
+	FGUI.BackgroundColor3 = Color3.new(255,255,255)
+	FGUI.BorderSizePixel = 1
+	FGUI.Position = UDim2.new(0,0, 0.667, 0)
+	FGUI.Size = UDim2.new(0,317, 0,271)
+	FGUI.Draggable = true
+	
+	
+	
+	lbltitle.Name = "Title"
+	lbltitle.Parent = FGUI
+	lbltitle.BackgroundColor3 = Color3.new(255,255,255)
+	lbltitle.BorderSizePixel = 1
+	lbltitle.Position = UDim2.new (0, 0,-0.122, 0)
+	lbltitle.Size = UDim2.new (0, 317,0, 33)
+	lbltitle.Visible = true
+	lbltitle.Active = true
+	lbltitle.Draggable = false
+	lbltitle.Selectable = true
+	lbltitle.Font = Enum.Font.SourceSansBold
+	lbltitle.Text = "A Simple Fuck(ing) GUI!!"
+	lbltitle.TextColor3 = Color3.new(0, 0, 0)
+	lbltitle.TextSize = 20
+	
+	
+	
+	
+	
+	btnSex.Name = "Sex"
+	btnSex.Parent = FGUI
+	btnSex.BackgroundColor3 = Color3.new(255,255,255)
+	btnSex.BorderSizePixel = 1
+	btnSex.Position = UDim2.new (0.044, 0,0.229, 0)
+	btnSex.Size = UDim2.new (0, 99,0, 31)
+	btnSex.Visible = true
+	btnSex.Active = true
+	btnSex.Draggable = false
+	btnSex.Selectable = true
+	btnSex.Font = Enum.Font.SourceSansBold
+	btnSex.Text = "Let's FUCK!!"
+	btnSex.TextColor3 = Color3.new(0, 0, 0)
+	btnSex.TextSize = 20
+	
+	
+	
+	
+	tbxVictim.Name = "VictimTEXT"
+	tbxVictim.Parent = FGUI
+	tbxVictim.BackgroundColor3 = Color3.new(255,255,255)
+	tbxVictim.BorderSizePixel = 1
+	tbxVictim.Position = UDim2.new (0.533, 0,0.229, 0)
+	tbxVictim.Size = UDim2.new (0, 133,0, 27)
+	tbxVictim.Visible = true
+	tbxVictim.Active = true
+	tbxVictim.Draggable = false
+	tbxVictim.Selectable = true
+	tbxVictim.Font = Enum.Font.SourceSansBold
+	tbxVictim.Text = "[NAME]"
+	tbxVictim.TextColor3 = Color3.new(0, 0, 0)
+	tbxVictim.TextSize = 20
+	
+	lblFUCKEMALL.Name = "FUCKEMALL"
+	lblFUCKEMALL.Parent = FGUI
+	lblFUCKEMALL.BackgroundColor3 = Color3.new(255,255,255)
+	lblFUCKEMALL.BorderSizePixel = 1
+	lblFUCKEMALL.Position = UDim2.new (0.025, 0,0.856, 0)
+	lblFUCKEMALL.Size = UDim2.new (0, 301,0, 27)
+	lblFUCKEMALL.Visible = true
+	lblFUCKEMALL.Font = Enum.Font.SourceSansBold
+	lblFUCKEMALL.Text = "FUCK AND FUCK"
+	lblFUCKEMALL.TextColor3 = Color3.new(0, 0, 0)
+	lblFUCKEMALL.TextSize = 20
+	
+	ImageLabel.Name = "ImageLabel"
+	ImageLabel.Parent = FGUI
+	ImageLabel.Image = "http://www.roblox.com/asset/?id=42837..."
+	ImageLabel.BorderSizePixel = 1
+	ImageLabel.Position = UDim2.new (0.274, 0,0.358, 0)
+	ImageLabel.Size = UDim2.new (0, 106,0, 121)
+	
+	
+	
+	
+	--Scripts
+	
+	
+	btnSex.MouseButton1Click:Connect(function()
+	
+		local player = tbxVictim.Text
+		local stupid = Instance.new('Animation')
+		stupid.AnimationId = 'rbxassetid://148840371'
+		hummy = game:GetService("Players").LocalPlayer.Character.Humanoid
+		pcall(function()
+			hummy.Parent.Pants:Destroy()
+		end)
+		pcall(function()
+			hummy.Parent.Shirt:Destroy()
+		end)
+		local notfunny = hummy:LoadAnimation(stupid)
+		notfunny:Play()
+		notfunny:AdjustSpeed(10)
+		while hummy.Parent.Parent ~= nil do
+			wait()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[tbxVictim.Text].Character.HumanoidRootPart.CFrame
+		end
+	end)
+end
+coroutine.wrap(KPJTQRD_fake_script)()
+local function QPKYSZP_fake_script() -- Bang.LocalScript 
+	local script = Instance.new('LocalScript', Bang)
+
+	local textLabel = script.Parent -- Get the TextLabel
+	local hue = 0 -- Start color at 0 (Red in HSV)
+	
+	while true do
+		hue = (hue + 1) % 360 -- Cycle through colors smoothly
+		textLabel.TextColor3 = Color3.fromHSV(hue / 360, 1, 1) -- Convert to RGB
+		wait(0.01) -- Adjust speed (Lower = Faster)
+	end
+	
+end
+coroutine.wrap(QPKYSZP_fake_script)()
+local function EGUUSQ_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local Frame = script.Parent.Parent.Frame
@@ -852,8 +1021,8 @@ local function CEJI_fake_script() -- Open.LocalScript
 		Frame.Visible = true
 	end)
 end
-coroutine.wrap(CEJI_fake_script)()
-local function ISXKZD_fake_script() -- Open.LocalScript 
+coroutine.wrap(EGUUSQ_fake_script)()
+local function DDIV_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local textLabel = script.Parent -- Get the TextLabel
