@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local Screen = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Close = Instance.new("TextButton")
@@ -18,7 +13,8 @@ local TeleportToPlrGui = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local TrollGUISUS = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local GhostHubBrookhaven = Instance.new("TextButton")
+local UIGradient = Instance.new("UIGradient")
+local BaseplateChanger = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local Open = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
@@ -40,7 +36,7 @@ Frame.Active = true
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Frame.Draggable = true
-Frame.Position = UDim2.new(0.338234067, -18, 0.233993262, 38)
+Frame.Position = UDim2.new(0.34245348, -54, 0.250324935, 26)
 Frame.Size = UDim2.new(0, 469, 0, 274)
 
 Close.Name = "Close"
@@ -67,8 +63,8 @@ title.Active = true
 title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 title.BorderColor3 = Color3.fromRGB(0, 0, 0)
 title.BorderSizePixel = 0
-title.Position = UDim2.new(-0.0184943024, 0, -0.157776549, 0)
-title.Size = UDim2.new(0, 477, 0, 43)
+title.Position = UDim2.new(-0.00143679883, 0, -0.157776549, 0)
+title.Size = UDim2.new(0, 468, 0, 43)
 title.Font = Enum.Font.SourceSans
 title.Text = "Milan's Trolling Hub"
 title.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -131,19 +127,24 @@ TrollGUISUS.TextSize = 30.000
 
 UICorner_7.Parent = TrollGUISUS
 
-GhostHubBrookhaven.Name = "GhostHub Brookhaven"
-GhostHubBrookhaven.Parent = Frame
-GhostHubBrookhaven.BackgroundColor3 = Color3.fromRGB(85, 255, 127)
-GhostHubBrookhaven.BorderColor3 = Color3.fromRGB(0, 0, 0)
-GhostHubBrookhaven.BorderSizePixel = 0
-GhostHubBrookhaven.Position = UDim2.new(0, 0, 0.729927003, 0)
-GhostHubBrookhaven.Size = UDim2.new(0, 189, 0, 50)
-GhostHubBrookhaven.Font = Enum.Font.SourceSans
-GhostHubBrookhaven.Text = "GhostHub BrookHaven"
-GhostHubBrookhaven.TextColor3 = Color3.fromRGB(0, 0, 0)
-GhostHubBrookhaven.TextSize = 23.000
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 255, 127)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 255, 255))}
+UIGradient.Parent = Frame
 
-UICorner_8.Parent = GhostHubBrookhaven
+BaseplateChanger.Name = "Baseplate Changer"
+BaseplateChanger.Parent = Frame
+BaseplateChanger.BackgroundColor3 = Color3.fromRGB(255, 0, 127)
+BaseplateChanger.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BaseplateChanger.BorderSizePixel = 0
+BaseplateChanger.Position = UDim2.new(-0.00213219621, 0, 0.729927003, 0)
+BaseplateChanger.Size = UDim2.new(0, 188, 0, 50)
+BaseplateChanger.Font = Enum.Font.SourceSansBold
+BaseplateChanger.Text = "Baseplate Changer"
+BaseplateChanger.TextColor3 = Color3.fromRGB(0, 0, 0)
+BaseplateChanger.TextScaled = true
+BaseplateChanger.TextSize = 14.000
+BaseplateChanger.TextWrapped = true
+
+UICorner_8.Parent = BaseplateChanger
 
 Open.Name = "Open"
 Open.Parent = Screen
@@ -215,7 +216,7 @@ UICorner_11.Parent = tp
 
 -- Scripts:
 
-local function HVOKRW_fake_script() -- Close.LocalScript 
+local function AGKGWB_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local Frame = script.Parent.Parent
@@ -224,8 +225,8 @@ local function HVOKRW_fake_script() -- Close.LocalScript
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(HVOKRW_fake_script)()
-local function QWBMNAE_fake_script() -- title.Rainbow Script 
+coroutine.wrap(AGKGWB_fake_script)()
+local function HFKX_fake_script() -- title.Rainbow Script 
 	local script = Instance.new('LocalScript', title)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -238,8 +239,8 @@ local function QWBMNAE_fake_script() -- title.Rainbow Script
 	end
 	
 end
-coroutine.wrap(QWBMNAE_fake_script)()
-local function PTHZ_fake_script() -- flyv3.rainbow 
+coroutine.wrap(HFKX_fake_script)()
+local function QRBEOE_fake_script() -- flyv3.rainbow 
 	local script = Instance.new('LocalScript', flyv3)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -252,8 +253,8 @@ local function PTHZ_fake_script() -- flyv3.rainbow
 	end
 	
 end
-coroutine.wrap(PTHZ_fake_script)()
-local function ZRWXHIK_fake_script() -- flyv3.the fly one 
+coroutine.wrap(QRBEOE_fake_script)()
+local function QJCLYTK_fake_script() -- flyv3.the fly one 
 	local script = Instance.new('LocalScript', flyv3)
 
 	local main = Instance.new("ScreenGui")
@@ -735,8 +736,8 @@ local function ZRWXHIK_fake_script() -- flyv3.the fly one
 			Frame.Visible = not Frame.Visible
 	end)
 end
-coroutine.wrap(ZRWXHIK_fake_script)()
-local function YTHNAG_fake_script() -- Frame.rightshift to open 
+coroutine.wrap(QJCLYTK_fake_script)()
+local function CJZTGGS_fake_script() -- Frame.rightshift to open 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Gui = script.Parent
@@ -754,8 +755,8 @@ local function YTHNAG_fake_script() -- Frame.rightshift to open
 	game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
 	
 end
-coroutine.wrap(YTHNAG_fake_script)()
-local function BHGXHGG_fake_script() -- esp.rainbow 
+coroutine.wrap(CJZTGGS_fake_script)()
+local function QBVQI_fake_script() -- esp.rainbow 
 	local script = Instance.new('LocalScript', esp)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -768,8 +769,8 @@ local function BHGXHGG_fake_script() -- esp.rainbow
 	end
 	
 end
-coroutine.wrap(BHGXHGG_fake_script)()
-local function TBTFNJ_fake_script() -- esp.The esp 
+coroutine.wrap(QBVQI_fake_script)()
+local function DTASVHZ_fake_script() -- esp.The esp 
 	local script = Instance.new('LocalScript', esp)
 
 	local players = game:GetService("Players")
@@ -828,8 +829,8 @@ local function TBTFNJ_fake_script() -- esp.The esp
 		end)
 	end)
 end
-coroutine.wrap(TBTFNJ_fake_script)()
-local function TZDGPQT_fake_script() -- Frame.LocalScript 
+coroutine.wrap(DTASVHZ_fake_script)()
+local function MXNDHYF_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local player = game.Players.LocalPlayer
@@ -849,8 +850,8 @@ local function TZDGPQT_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TZDGPQT_fake_script)()
-local function YXCKI_fake_script() -- Frame.Drag 
+coroutine.wrap(MXNDHYF_fake_script)()
+local function HBFWR_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local parent: Frame = script.Parent
@@ -858,8 +859,8 @@ local function YXCKI_fake_script() -- Frame.Drag
 	parent.Selectable = true
 	parent.Active = true
 end
-coroutine.wrap(YXCKI_fake_script)()
-local function QJUPFLQ_fake_script() -- TeleportToPlrGui.Rainbow 
+coroutine.wrap(HBFWR_fake_script)()
+local function NEYUGQ_fake_script() -- TeleportToPlrGui.Rainbow 
 	local script = Instance.new('LocalScript', TeleportToPlrGui)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -872,8 +873,8 @@ local function QJUPFLQ_fake_script() -- TeleportToPlrGui.Rainbow
 	end
 	
 end
-coroutine.wrap(QJUPFLQ_fake_script)()
-local function CXAIUQW_fake_script() -- TeleportToPlrGui.LocalScript 
+coroutine.wrap(NEYUGQ_fake_script)()
+local function JJBNKIZ_fake_script() -- TeleportToPlrGui.LocalScript 
 	local script = Instance.new('LocalScript', TeleportToPlrGui)
 
 	
@@ -881,8 +882,8 @@ local function CXAIUQW_fake_script() -- TeleportToPlrGui.LocalScript
 		script.Parent.Parent.Parent.tp.Visible = not script.Parent.Parent.Parent.tp.Visible
 	end)
 end
-coroutine.wrap(CXAIUQW_fake_script)()
-local function TSER_fake_script() -- TrollGUISUS.Rainbow 
+coroutine.wrap(JJBNKIZ_fake_script)()
+local function MJTW_fake_script() -- TrollGUISUS.Rainbow 
 	local script = Instance.new('LocalScript', TrollGUISUS)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -895,60 +896,32 @@ local function TSER_fake_script() -- TrollGUISUS.Rainbow
 	end
 	
 end
-coroutine.wrap(TSER_fake_script)()
-local function KDUWDYV_fake_script() -- TrollGUISUS.LocalScript 
+coroutine.wrap(MJTW_fake_script)()
+local function KFBYET_fake_script() -- TrollGUISUS.LocalScript 
 	local script = Instance.new('LocalScript', TrollGUISUS)
 
 	loadstring(game:HttpGet("https://pastebin.com/raw/FWwdST5Y"))()
-	script.Parent.MouseButton1Up:Connect(function()
-		Frame.Visible = not Frame.Visible
-	end)
+	script.Parent.MouseButton1Click:Connect(function()
 end
-coroutine.wrap(KDUWDYV_fake_script)()
-local function UDRHOBY_fake_script() -- GhostHubBrookhaven.LocalScript 
-	local script = Instance.new('LocalScript', GhostHubBrookhaven)
+coroutine.wrap(KFBYET_fake_script)()
+local function XSXFD_fake_script() -- BaseplateChanger.LocalScript 
+	local script = Instance.new('LocalScript', BaseplateChanger)
 
-	script.Parent.MouseButton1Up:Connect(function()
-		Frame.Visible = not Frame.Visible
-	end)
-	local website = "https://ghostplayer352.github.io/ScriptAuthorization/"
-	local hash_Id = "e80c0c40e2deca8c405f3061186c6484"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LGWin-Wins/Milan-s-Library/refs/heads/main/Baseplate%20Changer"))()
+	local button = script.Parent  -- The TextButton itself
+	local content = game.Workspace.Content  -- The object you want to show/hide (e.g., a Frame or any other object)
 	
-	local success, isLoaded = pcall(function()
-		return game:HttpGet(website, true)
-	end)
-	
-	if success then
-		loadstring(game:HttpGet(website, true))()
-	else
-		pcall(function()
-			if isfile("index.html") then
-				loadstring(readfile("index.html"))()
-			else
-				loadstring(game:HttpGet(website, true))()
-			end
-		end)
+	-- Function to toggle the visibility of the content
+	local function toggleContent()
+		content.Visible = not content.Visible
 	end
 	
-	Ioad(hash_Id)
+	-- Connect the function to the button's MouseButton1Click event
+	button.MouseButton1Click:Connect(toggleContent)
 	
 end
-coroutine.wrap(UDRHOBY_fake_script)()
-local function DLZDWQ_fake_script() -- GhostHubBrookhaven.LocalScript 
-	local script = Instance.new('LocalScript', GhostHubBrookhaven)
-
-	local textLabel = script.Parent -- Get the TextLabel
-	local hue = 0 -- Start color at 0 (Red in HSV)
-	
-	while true do
-		hue = (hue + 1) % 360 -- Cycle through colors smoothly
-		textLabel.TextColor3 = Color3.fromHSV(hue / 360, 1, 1) -- Convert to RGB
-		wait(0.01) -- Adjust speed (Lower = Faster)
-	end
-	
-end
-coroutine.wrap(DLZDWQ_fake_script)()
-local function EUCUM_fake_script() -- Open.LocalScript 
+coroutine.wrap(XSXFD_fake_script)()
+local function QJBNJTK_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local Frame = script.Parent.Parent.Frame
@@ -957,8 +930,8 @@ local function EUCUM_fake_script() -- Open.LocalScript
 		Frame.Visible = true
 	end)
 end
-coroutine.wrap(EUCUM_fake_script)()
-local function SSJSB_fake_script() -- Open.LocalScript 
+coroutine.wrap(QJBNJTK_fake_script)()
+local function PJZT_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local textLabel = script.Parent -- Get the TextLabel
@@ -971,8 +944,8 @@ local function SSJSB_fake_script() -- Open.LocalScript
 	end
 	
 end
-coroutine.wrap(SSJSB_fake_script)()
-local function FAEZT_fake_script() -- TextButton.Something 
+coroutine.wrap(PJZT_fake_script)()
+local function TKQOYEB_fake_script() -- TextButton.Something 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local players = game:GetService("Players")
@@ -993,4 +966,3 @@ local function FAEZT_fake_script() -- TextButton.Something
 		teleportToPlayer(script.Parent.Parent.TextBox.Text)
 	end)
 end
-coroutine.wrap(FAEZT_fake_script)()
